@@ -120,7 +120,7 @@ const sendmail1 = expressAsyncHandler(async (req,res) => {
     let message1 = {
         from: "MailGen",
         to : EMAIL,
-        subject: "Workshop Booking.",
+        subject: "Someone has Contacted You.",
         html: mail
     }
 
