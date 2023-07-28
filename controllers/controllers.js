@@ -8,7 +8,7 @@ const { EMAIL, PASSWORD } = require('../env.js')
 
 
 const sendmail = expressAsyncHandler(async (req,res) => {
-    const { name,email,phone,message, option1, option2, option3} = req.body;
+    const { name,email,phone,message, option2, option3} = req.body;
 
     console.log(name,email,phone,message);
 
@@ -41,8 +41,7 @@ const sendmail = expressAsyncHandler(async (req,res) => {
                         Email: email,
                         PhoneNumber: phone,
                         Message: message,
-                        Month: option1,
-                        Time: option2,
+                        SessionType: option2,
                         Subject: option3
                     }
                 ]
